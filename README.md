@@ -17,6 +17,7 @@ The bundled data is derived from the Avicenex web repo reference files and keeps
 
 ```sh
 swift test
+swift run AvicenexAISmoke
 ```
 
 The module targets iOS 17 and is ready to be embedded in an Xcode app target as `AvicenexAIAppView`.

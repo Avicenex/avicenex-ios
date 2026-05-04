@@ -6,10 +6,12 @@ let package = Package(
     name: "AvicenexAI",
     platforms: [.iOS(.v17), .macOS(.v13)],
     products: [
-        .library(name: "AvicenexAI", targets: ["AvicenexAI"])
+        .library(name: "AvicenexAI", targets: ["AvicenexAI"]),
+        .executable(name: "AvicenexAISmoke", targets: ["AvicenexAISmoke"])
     ],
     targets: [
         .target(name: "AvicenexAI"),
+        .executableTarget(name: "AvicenexAISmoke", dependencies: ["AvicenexAI"]),
         .testTarget(name: "AvicenexAITests", dependencies: ["AvicenexAI"])
     ]
 )
