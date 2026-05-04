@@ -2,7 +2,7 @@
 
 Native SwiftUI MVP for Avicenex AI mobile workflows.
 
-The repo was empty when scaffolded, so this package provides the native source module, demo review data, calculated claim risk scoring, and SwiftUI screens for:
+The repo was empty when scaffolded, so this project provides a runnable Xcode app target plus the native source module, demo review data, calculated claim risk scoring, and SwiftUI screens for:
 
 - Pre-bill review queue
 - Claim detail with calculated risk panel
@@ -20,4 +20,12 @@ swift test
 swift run AvicenexAISmoke
 ```
 
-The module targets iOS 17 and is ready to be embedded in an Xcode app target as `AvicenexAIAppView`.
+## Run In Xcode
+
+1. Install full Xcode from the Mac App Store or Apple Developer downloads.
+2. Open `AvicenexAI.xcodeproj`.
+3. Select the `AvicenexAI` scheme.
+4. Choose an iPhone simulator.
+5. Press Run.
+
+The app target wraps `AvicenexAIAppView` and targets iOS 17.
